@@ -1,6 +1,6 @@
 import { Button, Page, PageHeader, PageHeaderTools, PageSection, PageSectionVariants } from '@patternfly/react-core';
 import { ReactComponent as Logo } from '../img/logo.svg';
-import { ExclamationCircleIcon, PencilAltIcon, SaveIcon, UndoIcon } from '@patternfly/react-icons';
+import { ExclamationCircleIcon, GithubIcon, PencilAltIcon, SaveIcon, UndoIcon } from '@patternfly/react-icons';
 import React, { useEffect, useState } from 'react'
 import { metadata } from '../data/metadata'
 import { isEmpty } from '../helpers/utils';
@@ -36,6 +36,9 @@ export const SalesforceLimitsApp = ({ error }) => {
             return JSON.stringify(error);
         }
     }
+    const handleGit=()=>{
+        window.location.href="https://github.com/lordone1/salesforce-limits";
+    }
     return (
         <Page header={<PageHeader
             logo={<Logo />}
@@ -43,6 +46,7 @@ export const SalesforceLimitsApp = ({ error }) => {
                 {!error && !edit && <Button variant="link" icon={<PencilAltIcon size="md" color="#F0F0F0" />} iconPosition="right" onClick={handleEdit} />}
                 {!error && edit && <Button variant="link" icon={<SaveIcon size="md" color="#F0F0F0" />} iconPosition="right" onClick={handleSave} />}
                 {!error && edit && <Button variant="link" icon={<UndoIcon size="md" color="#F0F0F0" />} iconPosition="right" onClick={handleReset} />}
+                {<Button variant="link" icon={<GithubIcon size="md" color="#F0F0F0" />} iconPosition="right" onClick={handleGit} />}
             </PageHeaderTools>}
         />}>
             <PageSection variant={PageSectionVariants.darker}>
