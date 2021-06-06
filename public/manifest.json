@@ -1,0 +1,25 @@
+{
+  "name": "Salesforce Limits",
+  "description": "Check the health of your org",
+  "version": "0.1",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "icons": { "16": "logo-48.png",
+    "48": "logo-48.png",
+   "128": "logo-128.png" },
+  "options_page": "options.html",
+  "permissions": [
+    "cookies"
+  ],
+  "host_permissions": [
+    "https://*.salesforce.com/*",
+    "https://*.force.com/*",
+    "https://*.cloudforce.com/*",
+    "https://*.visualforce.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}

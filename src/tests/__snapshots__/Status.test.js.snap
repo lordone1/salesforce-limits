@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Status tests should render danger icon when status danger 1`] = `
+<Fragment>
+  <ExclamationCircleIcon
+    className="danger"
+    color="currentColor"
+    noVerticalAlign={false}
+    size="sm"
+  />
+</Fragment>
+`;
+
+exports[`Status tests should render question icon when no status provided 1`] = `
+<Fragment>
+  <QuestionCircleIcon
+    className="question"
+    color="currentColor"
+    noVerticalAlign={false}
+    size="sm"
+  />
+</Fragment>
+`;
+
+exports[`Status tests should render question icon when status undefined 1`] = `
+<Fragment>
+  <QuestionCircleIcon
+    className="question"
+    color="currentColor"
+    noVerticalAlign={false}
+    size="sm"
+  />
+</Fragment>
+`;
+
+exports[`Status tests should render success icon when status success 1`] = `
+<Fragment>
+  <CheckCircleIcon
+    className="success"
+    color="currentColor"
+    noVerticalAlign={false}
+    size="sm"
+  />
+</Fragment>
+`;
+
+exports[`Status tests should render warning icon when status warning 1`] = `
+<Fragment>
+  <ExclamationTriangleIcon
+    className="warning"
+    color="currentColor"
+    noVerticalAlign={false}
+    size="sm"
+  />
+</Fragment>
+`;
