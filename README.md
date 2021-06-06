@@ -1,4 +1,4 @@
-# What is Salesforce Limits? 
+# What is Salesforce Limits?
 ![Salesforce Limits](./img/logo.png)
 
 Salesforce is a [multitenant cloud solution](https://trailhead.salesforce.com/content/learn/modules/starting_force_com/starting_understanding_arch). This means that special attention must be paid to the different limits to avoid surprises.
