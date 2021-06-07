@@ -11,6 +11,14 @@ Salesforce Limits is a Chrome extension, which means you don't need to install a
 
 # Quick Start
 
+If you have downloaded the version from github, you can always generate the binary easily by executing 
+
+``npm install``
+
+``npm run build``
+
+If you are using the extension directly from Google Store, no additional commands need to be exectued, it's already package and ready to use.
+
 Log into the org you want to analyze.
 
 Click on the Salesforce Limits extension icon and introduce the Salesforce My Domain without specifying ``https://``. Example ``my-own-domain.my.salesforce.com``.
@@ -224,6 +232,4 @@ Span indicates the width of the report. Each row is divided in 12 blocks. Creati
 Thresholds indicate to the application how it should consider the information retrieved on each report. Each report is splitted in three segments: success, warning and danger. You should define as a percentage what value should be considered in each segment.
 
 ![Thresholds](./img/thresholds.png)
-
-
 
