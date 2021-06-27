@@ -78,7 +78,7 @@ export const EditDashboardItemForm = ({ isAdd, setMetadata, id, setModalOpen, re
         setSoql(e);
     }
     const handleLimit = (e) => {
-        if ((e >= 0) || (e === '')) {
+        if (!(e <= 0) || (e === '')) {
             setLimit(e);
         }
     }
